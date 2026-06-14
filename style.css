@@ -481,3 +481,13 @@ footer {
   to { transform: rotate(360deg); }
 }
 
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.navbar .container,
+section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
