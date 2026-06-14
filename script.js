@@ -15,3 +15,28 @@ document.addEventListener("DOMContentLoaded", () => {
         elementoSaludo.textContent = saludo;
     }
 });
+
+const instagramBtn = document.getElementById('instagram-btn');
+let pressTimer;
+
+
+instagramBtn.addEventListener('touchstart', (e) => {
+
+  pressTimer = setTimeout(() => {
+    e.preventDefault(); 
+    
+
+    const modalSara = new bootstrap.Modal(document.getElementById('modalSara'));
+    modalSara.show();
+  }, 600); 
+});
+
+
+instagramBtn.addEventListener('touchend', () => {
+  clearTimeout(pressTimer);
+});
+
+
+instagramBtn.addEventListener('touchmove', () => {
+  clearTimeout(pressTimer);
+});
