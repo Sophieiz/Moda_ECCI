@@ -134,9 +134,9 @@ section {
 }
 
 .card-aspectos {
-  border-radius: 20px;
+  border-radius: 20px !important;
   border: 3px solid #3c3530 !important;
-  background-color: #ffffff;
+  background-color: #ffffff !important;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
